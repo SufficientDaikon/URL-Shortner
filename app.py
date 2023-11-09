@@ -62,3 +62,5 @@ def shorturl(short_url):
     else:
         return render_template("erorr.html", erorr="URL not found")
 
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
