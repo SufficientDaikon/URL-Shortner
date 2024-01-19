@@ -1,12 +1,14 @@
 from flask import Flask, request, render_template, redirect
 from requests import get
 import mysql.connector
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 conn = mysql.connector.connect(
 
-    host="localhost",
+    host="loclalhost",
 
     user="admin",
 
@@ -51,6 +53,7 @@ def shorten():
         conn.close()
     except Exception:
         return render_template("erorr.html", erorr="Incorrect URL")
+        
 @app.route("/<short_url>")
 def shorturl(short_url):
     db = conn.cursor()
