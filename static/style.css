@@ -1,0 +1,40 @@
+header {
+    text-align: center;
+}
+
+.logo-9 {
+    position: relative;
+    text-decoration: none;
+}
+
+.logo-9 i {
+    font-size: 80px;
+    position: absolute;
+    z-index: 0;
+    text-align: center;
+    width: 150%;
+    left: 0;
+    top: -10px;
+    color: #34495e;
+    -webkit-animation: ring 2s ease infinite;
+    animation: ring 2s ease infinite;
+    text-decoration: none;
+}
+
+.logo-9 h3 {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 40px;
+    position: relative;
+    z-index: 1;
+    color: #0971e9;
+    text-shadow: 3px 3px 0 #fff, -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff;
+    text-decoration: none;
+}
+
+.center
+{
+    margin: auto;
+    text-align: center
+}
