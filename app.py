@@ -2,20 +2,27 @@ from flask import Flask, request, render_template, redirect
 from requests import get
 import mysql.connector
 from flask_cors import CORS
+from dotenv import load_dotenv
+from os import environ
 
+load_dotenv()
 app = Flask(__name__)
 CORS(app)
 
+timeout = 10
 conn = mysql.connector.connect(
 
-    host="loclalhost",
+    host=environ.get("DB_HOST"),
 
-    user="admin",
+    user=environ.get("USER"),
 
-    password="1234",
+    password=environ.get("PASSWORD"),
 
-    database="url"
+    database="urls",
 
+    port=environ.get("PORT"),
+
+    connect_timeout = timeout
 )
 
 def shorten_key(num):
