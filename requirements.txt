@@ -26,7 +26,6 @@ psycopg2-binary==2.9.9
 pycparser==2.21
 PySocks==1.7.1
 python-dotenv==1.0.1
-pywin32==306
 requests==2.31.0
 requests-file==1.5.1
 six==1.16.0
