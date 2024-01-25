@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, redirect
+from flask import Flask, request, render_template, redirect, url_for
 from requests import get
 import mysql.connector
 from flask_cors import CORS
@@ -20,7 +20,7 @@ conn = mysql.connector.connect(
 
     database="urls",
 
-    port=environ.get("PORT"),
+    port=environ.get("DB_PORT"),
 
     connect_timeout = timeout
 )
@@ -53,7 +53,7 @@ def shorten():
             db.execute("SELECT MAX(id) FROM urls")
             key = shorten_key(db.fetchall()[0][0] + 1)
             
-            to_insert = [str(url), ("127.0.0.1:5000/"+ key)]
+            to_insert = [str(url), ("https://another-url-shortner.onrender.com/" + key)]
             db.execute("INSERT INTO urls (long_url, short_url) VALUES (%s, %s)", to_insert)
             conn.commit()
             return render_template("shorturl.html", short_url=to_insert[1])
@@ -65,7 +65,7 @@ def shorten():
 def shorturl(short_url):
     db = conn.cursor()
 
-    db.execute("SELECT * FROM urls WHERE short_url = %s", ["127.0.0.1:5000/"+ short_url])
+    db.execute("SELECT * FROM urls WHERE short_url = %s", [("https://another-url-shortner.onrender.com/" + short_url)])
     found = db.fetchall()
     if found:
         return redirect(found[0][1])
