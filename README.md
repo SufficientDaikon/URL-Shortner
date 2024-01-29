@@ -12,9 +12,15 @@
 
 ## Explanation 
 - ### app.py
-  holds the main body of the webapp's Code, as well as the code to connect to the DB, and has three functions
+  holds the main body of the webapp's Code, as well as the code to connect to the DB, and has four functions
+  - #### index()
+    simply loads the main homepage of the app and is the defult route of the app.
   - #### shorten_key()
-    which takes a number and converts it to a BASE62 string, the idea is to take the id for the url in the database, and convert it to BASE62, that way there will never be duplicates because the id will always be different
+    which takes a number and converts it to a BASE62 string, the idea is to take the id for the url in the database, and convert it to BASE62, and the result will be the key for the shortend url, that way there will never be duplicates because the id will always be different.
+  - #### shorten()
+    this function gets called when there is a url that is sent to the server, it first checks if the url is vaild and accessible, if it is, it then checks the DB for a duplicate, if there isn't, it then inserts it into the DB and calles the shorten_key() function with the passing in the id of the newly inserted url, and inserts the result of that function into the DB as the shortened url
+    
+    
 - ### run.py
   holds the argument that loads the app for gunicorn
 - ### requirements.txt
