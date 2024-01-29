@@ -2,17 +2,19 @@
  URL50
 </h1>
 
-<h4 align="center">Creating custom URL shortener with Flask</h4>
+<h4 align="center">Creating custom URL shortener with Flask and MySQL</h4>
 <p align="center">
  Built with ❤︎ 
 </p>
 </br>
+
 ## Architecture
 
 ## Explanation 
-
 - ### app.py
-  holds the main body of the webapp's Code, it's functions, and all that relates to what happens behind the scenes.
+  holds the main body of the webapp's Code, as well as the code to connect to the DB, and has three functions
+  - #### shorten_key()
+    which takes a number and converts it to a BASE62 string, the idea is to take the id for the url in the database, and convert it to BASE62, that way there will never be duplicates because the id will always be different
 - ### run.py
   holds the argument that loads the app for gunicorn
 - ### requirements.txt
