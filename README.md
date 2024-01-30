@@ -9,7 +9,8 @@
 </br>
 
 ## Diagram
-![image](https://github.com/SufficientDaikon/URL-shortner/assets/65625347/71ead350-50e4-498b-b020-7efe07cdbd40)
+![image](https://github.com/SufficientDaikon/URL-shortner/assets/65625347/5a4d9295-ee4c-4261-9697-779841353046)
+
 
 ## Demo
 ![vado](https://github.com/SufficientDaikon/URL-shortner/assets/65625347/97dda7bd-2334-4fbd-b649-4dbcbedf608a)
