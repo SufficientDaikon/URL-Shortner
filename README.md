@@ -11,7 +11,7 @@
 ## Architecture
 ## Demo
 
-<iframe src="https://giphy.com/embed/bBJ5WxU9oQDc9QI9ym" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/bBJ5WxU9oQDc9QI9ym">via GIPHY</a></p>
+<iframe src="https://giphy.com/embed/bBJ5WxU9oQDc9QI9ym" width="480" height="270" frameBorder="0" class="giphy-embed" >
 
 ## Explanation
 - ### app.py
