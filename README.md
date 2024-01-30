@@ -11,7 +11,7 @@
 ## Architecture
 ## Demo
 
-<iframe src="https://giphy.com/embed/bBJ5WxU9oQDc9QI9ym" width="480" height="270" frameBorder="0" class="giphy-embed" >
+![vado](https://github.com/SufficientDaikon/URL-shortner/assets/65625347/97dda7bd-2334-4fbd-b649-4dbcbedf608a)
 
 ## Explanation
 - ### app.py
