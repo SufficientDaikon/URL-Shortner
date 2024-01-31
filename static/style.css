@@ -7,14 +7,10 @@ header {
     text-decoration: none;
 }
 
-.logo-9 i {
+.logo-9 a {
     font-size: 80px;
-    position: absolute;
-    z-index: 0;
-    text-align: center;
+    z-index: 0; 
     width: 150%;
-    left: 0;
-    top: -10px;
     color: #34495e;
     -webkit-animation: ring 2s ease infinite;
     animation: ring 2s ease infinite;
@@ -22,14 +18,14 @@ header {
 }
 
 .logo-9 h3 {
-    font-family: 'Lora', serif;
-    font-weight: 600;
+    font-family: asap, arial;
+    font-weight: 800;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 50px;
     position: relative;
     z-index: 1;
-    color: #0971e9;
-    text-shadow: 3px 3px 0 #fff, -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff;
+    color: #0d75fd;
+    text-shadow: 0 2px 2px #ddd;
     text-decoration: none;
 }
 
