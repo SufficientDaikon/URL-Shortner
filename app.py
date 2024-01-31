@@ -63,7 +63,7 @@ def shorten():
             key = shorten_key(db.fetchall()[0][0] + 1)
             
             # insert url into database with the converted id as a key
-            to_insert = [str(url), ("https://another-url-shortner.onrender.com/" + key)]
+            to_insert = [str(url), ("https://url-50.onrender.com/" + key)]
             db.execute("INSERT INTO urls (long_url, short_url) VALUES (%s, %s)", to_insert)
             conn.commit()
             # return the short url to the user
@@ -77,7 +77,7 @@ def shorten():
 def shorturl(short_url):
     db = conn.cursor()
     # check if short url is in database
-    db.execute("SELECT * FROM urls WHERE short_url = %s", [("https://another-url-shortner.onrender.com/" + short_url)])
+    db.execute("SELECT * FROM urls WHERE short_url = %s", [("https://url-50.onrender.com/" + short_url)])
     found = db.fetchall()
     # if short url is in database redirect to the long url
     if found:

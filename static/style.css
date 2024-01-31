@@ -8,12 +8,6 @@ header {
 }
 
 .logo-9 a {
-    font-size: 80px;
-    z-index: 0; 
-    width: 150%;
-    color: #34495e;
-    -webkit-animation: ring 2s ease infinite;
-    animation: ring 2s ease infinite;
     text-decoration: none;
 }
 
