@@ -21,7 +21,7 @@ the font for the "logo" comes from [Google fonts]([url](https://fonts.google.com
 ## Demo
 ![dssds](https://github.com/SufficientDaikon/URL-shortner/assets/65625347/af8b814f-8f66-4827-96bb-dc55d49b1c50)
 
-<h4 align="center"> [try it out for your self](https://url-50.onrender.com/) <h4>
+<h4 align="center"> <a href="https://url-50.onrender.com/">Try it out your self</a> </h4>
 ## Files
 - ### app.py
   holds the main body of the webapp's Code, as well as the code to connect to the DB, and has four functions
