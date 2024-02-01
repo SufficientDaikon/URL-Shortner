@@ -9,10 +9,10 @@
 </br>
 
 ## Explanation
-This app takes the URL you input, it stores it in the Database, then it generates a BASE62 key assosiacted with it, and generates a shorter URL using the key.
-the database is a mysql DB hosted on [Aiven]([url](https://aiven.io/)).
-[Bootstrap]([url](https://getbootstrap.com/)) has been used for many of the UI elements across the app, barring a few exceptions 
-the font for the "logo" comes from [Google fonts]([url](https://fonts.google.com/)) 
+- This app takes the URL you input, it stores it in the Database, then it generates a BASE62 key assosiacted with it, and generates a shorter URL using the key.
+- the database is a mysql DB hosted on [Aiven](https://aiven.io/).
+- [Bootstrap](https://getbootstrap.com/) has been used for many of the UI elements across the app, barring a few exceptions 
+- the font for the "logo" comes from [Google fonts](https://fonts.google.com/)
 
 ## Diagram
 ![image](https://github.com/SufficientDaikon/URL-shortner/assets/65625347/5a4d9295-ee4c-4261-9697-779841353046)
