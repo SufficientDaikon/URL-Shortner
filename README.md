@@ -13,7 +13,8 @@
 - the database is a mysql DB hosted on [Aiven](https://aiven.io/).
 - [Bootstrap](https://getbootstrap.com/) has been used for many of the UI elements across the app, barring a few exceptions 
 - the font for the "logo" comes from [Google fonts](https://fonts.google.com/)
-
+- the app is deployed on [render](https://render.com/)
+  
 ## Diagram
 ![image](https://github.com/SufficientDaikon/URL-shortner/assets/65625347/5a4d9295-ee4c-4261-9697-779841353046)
 
@@ -52,5 +53,9 @@
 	holds the html for displaying the shortened URL
 
   ## Extras
-  For security reasons i had to find a way to abstract the DB information from the application code, there were many ways 
+  - For security reasons i had to find a way to abstract the DB information from the application code, there were many ways, the one i settled with is using environment variables to store the actaul information abstracted away as  generic variables, in a .env file, then i loaded it into the app and instead of hardcoding the DB info, i used these variables instead.
+   - when deciding what DBMS to go with, it was either SQLite or learn something new, i went with the latter and chose MySQL simply because i wanted to learn MySQL as i was doing this project.
+   - Bing Copilot was used as direct help twice, some UI elements in the front end, and helped with the shorten_key() function.
+   - i decided to go with the flask framework for this project because i felt i wasn't comfortable enough with it to move on to something else yet.
+     
    
