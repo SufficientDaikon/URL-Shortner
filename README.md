@@ -1,8 +1,9 @@
+<p>Ever found something really cool on the interwebs that you wanted to share with your friends, but when you went to copy the URL for said cool thing you found that it's just a bit too long and a lil ugly?, it's a problem
+we all face, which is why i made this one of a kind project that no one has thought of before, to help you make those long, ugly URLs shareable, this... is my gift to the world.</p>
 <h1 align="center">
  URL50
 </h1>
-
-<h4 align="center">Creating custom URL shortener with Flask and MySQL</h4>
+<h4 align="center">a custom URL shortener with Flask and MySQL</h4>
 <p align="center">
  Built with ❤︎ 
 </p>
