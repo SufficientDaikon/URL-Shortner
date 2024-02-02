@@ -53,7 +53,7 @@ we all face, which is why i made this one of a kind project that no one has thou
   - #### shorturl.html
 	holds the html for displaying the shortened URL
 
-  ## Extras
+## Extras
   - For security reasons i had to find a way to abstract the DB information from the application code, there were many ways, the one i settled with is using environment variables to store the actaul information abstracted away as  generic variables, in a .env file, then i loaded it into the app and instead of hardcoding the DB info, i used these variables instead.
    - when deciding what DBMS to go with, it was either SQLite or learn something new, i went with the latter and chose MySQL simply because i wanted to learn MySQL as i was doing this project.
    - Bing Copilot was used as direct help twice, some UI elements in the front end, and helped with the shorten_key() function.
