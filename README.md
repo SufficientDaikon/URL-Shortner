@@ -23,6 +23,9 @@ we all face, which is why i made this one of a kind project that no one has thou
 ## Demo
 ![dssds](https://github.com/SufficientDaikon/URL-shortner/assets/65625347/af8b814f-8f66-4827-96bb-dc55d49b1c50)
 
+#### [Video Demo](https://youtu.be/9RRjS5GIDn8)
+
+
 <h3 align="center"> <a href="https://url-50.onrender.com/">Try it out your self</a> </h3>
 
 ## Files
