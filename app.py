@@ -1,9 +1,10 @@
-from flask import Flask, request, render_template, redirect, url_for
+from flask import Flask, request, render_template, redirect
 from requests import get
 import mysql.connector
 from flask_cors import CORS
 from dotenv import load_dotenv
 from os import environ
+from urllib.parse import urlparse
 
 #load env variables
 load_dotenv()
@@ -49,8 +50,9 @@ def shorten():
     db = conn.cursor()
     try:
         url = request.form.get("url")
-        if url == "https://url-50.onrender.com/":
+        if urlparse(url).netloc == urlparse(request.url_root).netloc:
             return render_template("erorr.html", erorr="Can't do that ;)")
+        
         # check if url is valid
         if get(url).status_code == 200:
             # check if url is already in database
