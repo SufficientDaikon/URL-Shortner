@@ -49,6 +49,8 @@ def shorten():
     db = conn.cursor()
     try:
         url = request.form.get("url")
+        if url == "https://url-50.onrender.com/":
+            return render_template("erorr.html", erorr="Can't do that ;)")
         # check if url is valid
         if get(url).status_code == 200:
             # check if url is already in database
