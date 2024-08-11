@@ -74,7 +74,7 @@ def shorten():
             return render_template("shorturl.html", short_url=to_insert[1])
         conn.close()
         # if url is invalid return an error
-    except Exception:
+    except BaseException:
         return render_template("erorr.html", erorr="Incorrect URL")
         
 @app.route("/<short_url>")
